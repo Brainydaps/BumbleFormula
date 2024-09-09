@@ -7,6 +7,11 @@ As the rate of marriage is plummeting globally and many men are increasingly aba
 
 **Note:** This machine learning model powering this software and the training data are both **not publicly available** to prevent any potential misuse or inappropriate applications. The model was trained with strict ethical guidelines and was developed purely for academic and research purposes which would later be published and referenced here.
 
+## Diagram of the brain of the AI based on FastTree algorithm:
+
+![model](https://github.com/user-attachments/assets/f52787b4-ec10-423e-b4ef-99f56a01920e)
+
+
 ## Performance
 The AI boasts a **macro accuracy of 89%**, validated through **5-fold cross-validation**. It offers predictions for various classifications of women, with results that adjust based on the scoring assigned to each class. Predictions include 15 categories such as "serious," "friend," "Gamer," and more, depending on the input data.
 
