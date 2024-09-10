@@ -34,3 +34,5 @@ The AI may classify a woman into up to 4 classes, especially when her public pro
 
 ## Responsible Use
 This AI is intended to be used for **ethical, academic, and research purposes only**. Given the sensitive nature of predicting behavior, it is crucial that this tool be used responsibly to avoid any harmful implications or invasion of privacy. We have made the decision to **keep the machine learning model and training data private** to ensure it is not used in ways that could exploit or manipulate individuals.
+
+[BumbleFormula Explanation on Kaggle](https://www.kaggle.com/code/adedapoadeniran/human-behavior-predictor-ai)
