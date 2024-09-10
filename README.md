@@ -29,5 +29,8 @@ The AI may classify a woman into up to 4 classes, especially when her public pro
 - **Dynamic Classification**: Capable of classifying women into up to 4 classes when profile information is limited, highlighting classification challenges.
 - **Interactive Profiling**: Asks questions about the woman’s dating profile and uses the responses to enhance prediction accuracy, with confidence scores provided for each prediction.
 
+  ![Screenshot 2024-09-10 034331](https://github.com/user-attachments/assets/d6dd2021-e0f5-476f-a001-95c2d47e3fd1)
+
+
 ## Responsible Use
 This AI is intended to be used for **ethical, academic, and research purposes only**. Given the sensitive nature of predicting behavior, it is crucial that this tool be used responsibly to avoid any harmful implications or invasion of privacy. We have made the decision to **keep the machine learning model and training data private** to ensure it is not used in ways that could exploit or manipulate individuals.
