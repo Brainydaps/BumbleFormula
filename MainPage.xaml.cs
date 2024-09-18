@@ -1,4 +1,4 @@
-﻿using Microsoft.Maui.Controls;
+using Microsoft.Maui.Controls;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -133,78 +133,86 @@ namespace BumbleFormula
                 _ => 0
             };
 
-            // Collect additional nil information
+            // Collect additional nils information
             int nils = 0;
+            int profilenils = 0;
+            int bionils = 0;
+            int lookingnils = 0;
+            int causenils = 0;
+            int interestnils = 0;
 
             // Collect each additional piece of information
             string originOption = await DisplayActionSheet("Select Origin (if not present, nils +1)", "Cancel", null, "Origin present", "Nil");
-            if (originOption == "Nil") nils++;
+            if (originOption == "Nil") nils++; profilenils++;
+
+            string locationOption = await DisplayActionSheet("Select Location (if not present, nils +1)", "Cancel", null, "Location present", "Nil");
+            if (originOption == "Nil") nils++; profilenils++;
 
             string occupationOption = await DisplayActionSheet("Select Occupation (if not present, nils +1)", "Cancel", null, "Occupation present", "Nil");
-            if (occupationOption == "Nil") nils++;
+            if (occupationOption == "Nil") nils++; profilenils++;
 
             string heightOptionAdditional = await DisplayActionSheet("Select Height (if not present, nils +1)", "Cancel", null, "Height present", "Nil");
-            if (heightOptionAdditional == "Nil") nils++;
+            if (heightOptionAdditional == "Nil") nils++; bionils++;
 
             string physicalActivityOptionAdditional = await DisplayActionSheet("Select Physical Activity (if not present, nils +1)", "Cancel", null, "Physical Activity present", "Nil");
-            if (physicalActivityOptionAdditional == "Nil") nils++;
+            if (physicalActivityOptionAdditional == "Nil") nils++; bionils++;
 
             string educationOptionAdditional = await DisplayActionSheet("Select Education (if not present, nils +1)", "Cancel", null, "Education present", "Nil");
-            if (educationOptionAdditional == "Nil") nils++;
+            if (educationOptionAdditional == "Nil") nils++; bionils++;
 
             string drinkingOptionAdditional = await DisplayActionSheet("Select Drinking (if not present, nils +1)", "Cancel", null, "Drinking present", "Nil");
-            if (drinkingOptionAdditional == "Nil") nils++;
+            if (drinkingOptionAdditional == "Nil") nils++; bionils++;
 
             string smokingOptionAdditional = await DisplayActionSheet("Select Smoking (if not present, nils +1)", "Cancel", null, "Smoking present", "Nil");
-            if (smokingOptionAdditional == "Nil") nils++;
+            if (smokingOptionAdditional == "Nil") nils++; bionils++;
 
             string wantChildrenOptionAdditional = await DisplayActionSheet("Select Want Children (if not present, nils +1)", "Cancel", null, "Want Children present", "Nil");
-            if (wantChildrenOptionAdditional == "Nil") nils++;
+            if (wantChildrenOptionAdditional == "Nil") nils++; bionils++;
 
             string haveKidsOptionAdditional = await DisplayActionSheet("Select Have Kids (if not present, nils +1)", "Cancel", null, "Have Kids present", "Nil");
-            if (haveKidsOptionAdditional == "Nil") nils++;
+            if (haveKidsOptionAdditional == "Nil") nils++; bionils++;
 
             string starsignOption = await DisplayActionSheet("Select Starsign (if not present, nils +1)", "Cancel", null, "Starsign present", "Nil");
-            if (starsignOption == "Nil") nils++;
+            if (starsignOption == "Nil") nils++; bionils++;
 
             string politicsOptionAdditional = await DisplayActionSheet("Select Politics (if not present, nils +1)", "Cancel", null, "Politics present", "Nil");
-            if (politicsOptionAdditional == "Nil") nils++;
+            if (politicsOptionAdditional == "Nil") nils++; bionils++;
 
             string religionOption = await DisplayActionSheet("Select Religion (if not present, nils +1)", "Cancel", null, "Religion present", "Nil");
-            if (religionOption == "Nil") nils++;
+            if (religionOption == "Nil") nils++; bionils++;
 
             string lookingForOption = await DisplayActionSheet("Select Looking For (if not present, nils +1)", "Cancel", null, "Looking For 1st option present", "Nil");
-            if (lookingForOption == "Nil") nils++;
+            if (lookingForOption == "Nil") nils++; lookingnils++;
 
             string lookingFor2Option = await DisplayActionSheet("Select Looking For2 (if not present, nils +1)", "Cancel", null, "Looking For 2nd option present", "Nil");
-            if (lookingFor2Option == "Nil") nils++;
+            if (lookingFor2Option == "Nil") nils++; lookingnils++;
 
             string value1Option = await DisplayActionSheet("Select Value1 (if not present, nils +1)", "Cancel", null, "1st Value present", "Nil");
-            if (value1Option == "Nil") nils++;
+            if (value1Option == "Nil") nils++; lookingnils++;
 
             string value2Option = await DisplayActionSheet("Select Value2 (if not present, nils +1)", "Cancel", null, "2nd Value present", "Nil");
-            if (value2Option == "Nil") nils++;
+            if (value2Option == "Nil") nils++; lookingnils++;
 
             string value3Option = await DisplayActionSheet("Select Value3 (if not present, nils +1)", "Cancel", null, "3rd Value present", "Nil");
-            if (value3Option == "Nil") nils++;
+            if (value3Option == "Nil") nils++; lookingnils++;
 
             string cause1Option = await DisplayActionSheet("Select Cause1 (if not present, nils +1)", "Cancel", null, "1st Cause present", "Nil");
-            if (cause1Option == "Nil") nils++;
+            if (cause1Option == "Nil") nils++; causenils++;
 
             string cause2Option = await DisplayActionSheet("Select Cause2 (if not present, nils +1)", "Cancel", null, "2nd Cause present", "Nil");
-            if (cause2Option == "Nil") nils++;
+            if (cause2Option == "Nil") nils++; causenils++;
 
             string cause3Option = await DisplayActionSheet("Select Cause3 (if not present, nils +1)", "Cancel", null, "3rd Cause present", "Nil");
-            if (cause3Option == "Nil") nils++;
+            if (cause3Option == "Nil") nils++; causenils++;
 
             string interest1Option = await DisplayActionSheet("Select Interest1 (if not present, nils +1)", "Cancel", null, "1st Interest present", "Nil");
-            if (interest1Option == "Nil") nils++;
+            if (interest1Option == "Nil") nils++; interestnils++;
 
             string interest2Option = await DisplayActionSheet("Select Interest2 (if not present, nils +1)", "Cancel", null, "2nd Interest present", "Nil");
-            if (interest2Option == "Nil") nils++;
+            if (interest2Option == "Nil") nils++; interestnils++;
 
             string interest3Option = await DisplayActionSheet("Select Interest3 (if not present, nils +1)", "Cancel", null, "3rd Interest present", "Nil");
-            if (interest3Option == "Nil") nils++;
+            if (interest3Option == "Nil") nils++; interestnils++;
 
             // Fill the features into the dictionary
             userFeatures["age"] = age;
@@ -219,6 +227,11 @@ namespace BumbleFormula
             userFeatures["havekids"] = haveKids;
             userFeatures["politics"] = politics;
             userFeatures["nils"] = nils;
+            userFeatures["profilenils"] = profilenils;
+            userFeatures["bionils"] = bionils;
+            userFeatures["lookingnils"] = lookingnils;
+            userFeatures["causenils"] = causenils;
+            userFeatures["interestnils"] = interestnils;
 
             // Pass the collected values to BumbleFormulaBot
             var result = BumbleFormulaBot.Predict(userFeatures);
