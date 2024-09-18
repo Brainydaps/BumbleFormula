@@ -1,4 +1,4 @@
-﻿using Microsoft.ML;
+using Microsoft.ML;
 using Microsoft.ML.Data;
 using System.Diagnostics;
 
@@ -6,7 +6,7 @@ namespace BumbleFormula
 {
     public static class BumbleFormulaBot
     {
-        private static readonly string modelPath = Path.Combine(AppContext.BaseDirectory, "model.zip");
+        private static readonly string modelPath = Path.Combine(AppContext.BaseDirectory, "model2.zip");
         private static readonly MLContext mlContext = new MLContext();
 
         public static string Predict(Dictionary<string, double> features)
@@ -47,7 +47,12 @@ namespace BumbleFormula
                 wantchildren = (float)features["wantchildren"],
                 havekids = (float)features["havekids"],
                 politics = (float)features["politics"],
-                nils = (float)features["nils"]
+                nils = (float)features["nils"],
+                profilenils = (float)features["profilenils"],
+                bionils = (float)features["bionils"],
+                lookingnils = (float)features["lookingnils"],
+                causenils = (float)features["causenils"],
+                interestnils = (float)features["interestnils"]
             };
 
             Debug.WriteLine($"Input Data: Age={inputData.age}, NumberofHerPictures={inputData.numberofherpictures}, NumberofLinesInBio={inputData.numberoflinesinbio}, Height={inputData.height}");
@@ -58,18 +63,18 @@ namespace BumbleFormula
 
             // Class labels
             string[] classLabels = new[] { "gamer",
-"later",
+"ghoster",
 "handsitter",
 "seemserious",
-"shamelessgold",
+"boldgold",
 "unfriendly",
 "fwb",
-"friend",
-"parasite",
+"friendzoner",
+"nonegiver",
 "serious",
 "paranoid",
 "claimserious",
-"shamefulgold",
+"shygold",
 "business",
 "hk", };
 
@@ -105,6 +110,12 @@ namespace BumbleFormula
         public float havekids { get; set; }
         public float politics { get; set; }
         public float nils { get; set; }
+        public float profilenils { get; set; }
+        public float bionils { get; set; }
+        public float lookingnils { get; set; }
+        public float causenils { get; set; }
+        public float interestnils { get; set; }
+
 
         // Include category as the label for training, but it will be ignored during inference
         [ColumnName("category"), LoadColumn(12)]
