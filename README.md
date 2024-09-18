@@ -10,6 +10,8 @@ As the rate of marriage is plummeting globally and many men are increasingly aba
 ## Future Plans
 There are plans to convert more categorical features into numerical values for model training, using the level of scantiness in different aspects of the dating profiles. This means that the AI will start considering the specific kinds of information a Nigerian woman chooses to share and what she omits as predictors of her behavior. This feature will allow the model to become even more nuanced and accurate in its predictions.
 
+[BumbleFormula Video Demonstration on Youtube](https://youtu.be/-RD6vXAnp8c?si=q8WALweURyQjr_YG)
+
 ## Diagram of the Brain of the AI based on FastTree Algorithm
 
 ![model](https://github.com/user-attachments/assets/f52787b4-ec10-423e-b4ef-99f56a01920e)
